@@ -1,0 +1,19 @@
+{
+  "name": "freeton-staking-assistant",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "@tonclient/core": "~1.16.0",
+    "@tonclient/lib-node": "~1.16.0",
+    "cookie-parser": "~1.4.5",
+    "cron": "~1.8.2",
+    "debug": "~4.3.2",
+    "express": "~4.17.1",
+    "express-async-handler": "~1.1.4",
+    "lodash": "~4.17.21",
+    "morgan": "~1.10.0"
+  }
+}
