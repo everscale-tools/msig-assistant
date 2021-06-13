@@ -1,0 +1,21 @@
+module.exports = [
+    {
+        client: {
+            network: {
+                endpoints: ['https://net1.ton.dev/', 'https://net5.ton.dev/']
+            }
+        },
+        sources: { // multiple sources are allowed: key - wallet address, value - list of confirmers' key pairs
+            '0:8c0a9125fea3cc01fd4f5b866f1e0ef9bed551c56a0e5ddaf2483dd3cf4da69d': [
+                {
+                    public: '41c7f372bcac7724cd7119647323e229bd11d9ec8a9709ae34deb37fade32a06',
+                    secret: 'c664b469e9c1162af7fffe3cd821f0048207d14c63e371730392b7d9aa3bd4e1'
+                }
+            ]
+        },
+        destinations: [ // multiple destinations are allowed
+            '0:0574877a01e31794d6610bb3dacb7c162c453b8d7ece403953821cd4367c43dc',
+            '-1:6a834b8e2f3a0f8d5df2f3228638360dd4f52d12afa0c7bbb38e9f88284cffc6'
+        ]
+    }
+]

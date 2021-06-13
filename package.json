@@ -1,5 +1,5 @@
 {
-  "name": "freeton-staking-assistant",
+  "name": "freeton-msig-assistant",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -8,6 +8,8 @@
   "dependencies": {
     "@tonclient/core": "~1.16.0",
     "@tonclient/lib-node": "~1.16.0",
+    "async": "~3.2.0",
+    "better-queue": "~3.8.10",
     "cookie-parser": "~1.4.5",
     "cron": "~1.8.2",
     "debug": "~4.3.2",
