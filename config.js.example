@@ -1,5 +1,6 @@
 module.exports = [
     {
+        txIterationStateDbPath: '/db/net.ton.dev/iteration-state.db',
         client: {
             network: {
                 endpoints: ['https://net1.ton.dev/', 'https://net5.ton.dev/']

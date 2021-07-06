@@ -2,3 +2,6 @@
 Dockerfile
 .env
 docker-compose.yml
+config.js
+
+db/
