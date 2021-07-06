@@ -29,7 +29,7 @@ _.forEach(configs, async (config, index) => {
 
         await txApprover.run()
 
-        debug(`Transaction Approver #${index + 1} successfully started`);
+        debug(`Transaction Approver #${index + 1} successfully started` + (config.dryRun ? ' (dryRun)' : ''));
     }
     catch (err) {
         debug(`Transaction Approver #${index + 1} construction failed`);
