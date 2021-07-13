@@ -22,12 +22,13 @@ module.exports = app;
 const _ = require('lodash');
 const TransactionApprover = require('./lib/transaction-approver');
 const configs = require('./config');
+const ps = [];
 
-_.forEach(configs, async (config, index) => {
+_.forEach(configs, (config, index) => {
     try {
         const txApprover = new TransactionApprover(config);
 
-        await txApprover.run()
+        ps.push(txApprover.run());
 
         debug(`Transaction Approver #${index + 1} successfully started` + (config.dryRun ? ' (dryRun)' : ''));
     }
@@ -35,3 +36,9 @@ _.forEach(configs, async (config, index) => {
         debug(`Transaction Approver #${index + 1} construction failed`);
     }
 });
+
+Promise.all(ps)
+    .then(() => debug(`no Transaction Approvers configured [ps.length = ${ps.length}] - exiting...`))
+    .catch(() => debug('some Transaction Approver got interrupted - exiting...'))
+    .finally(() => process.exit(1));
+
