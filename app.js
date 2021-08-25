@@ -39,6 +39,6 @@ _.forEach(configs, (config, index) => {
 
 Promise.all(ps)
     .then(() => debug(`no Transaction Approvers configured [ps.length = ${ps.length}] - exiting...`))
-    .catch(() => debug('some Transaction Approver got interrupted - exiting...'))
+    .catch(err => debug(`some Transaction Approver got interrupted - exiting... ${JSON.stringify(err, null, 2)}`))
     .finally(() => process.exit(1));
 
