@@ -1,6 +1,6 @@
 {
   "name": "freeton-msig-assistant",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
@@ -17,6 +17,7 @@
     "express-async-handler": "~1.1.4",
     "lodash": "~4.17.21",
     "morgan": "~1.10.0",
-    "nedb": "~1.8.0"
+    "nedb": "~1.8.0",
+    "tmp-promise": "~3.0.2"
   }
 }
