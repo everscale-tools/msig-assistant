@@ -1,7 +1,11 @@
-const debug = require('debug')('api:index');
-const express = require('express');
+import Debug from 'debug';
+import express from 'express';
+import asyncHandler from 'express-async-handler';
+
+const debug = Debug('api:index');
 const router = express.Router();
-const asyncHandler = require('express-async-handler');
+
+export default router;
 
 function errorHandler(err, req, res, next) {
     debug('ERROR:', err);
@@ -13,4 +17,3 @@ router.post('/', asyncHandler(async (req, res) => {
     res.send();
 }), errorHandler);
 
-module.exports = router;

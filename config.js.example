@@ -1,4 +1,4 @@
-module.exports = [
+export default [
     {
         txIterationStateDbPath: '/db/net.ton.dev/iteration-state.db',
         client: {
