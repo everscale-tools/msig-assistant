@@ -1,7 +1,7 @@
 ![build](https://img.shields.io/docker/cloud/build/sergemedvedev/freeton-msig-assistant.svg)
 [![version](https://img.shields.io/docker/v/sergemedvedev/freeton-msig-assistant?sort=semver)](https://hub.docker.com/r/sergemedvedev/freeton-msig-assistant/tags)
 
-# Free TON MultiSig Assistant
+# Everscale MultiSig Assistant
 
 ## What is it?
 
