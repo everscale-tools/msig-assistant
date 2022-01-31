@@ -23,7 +23,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: sergemedvedev/freeton-msig-assistant
+          images: sergemedvedev/everscale-msig-assistant
           tags: |
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
