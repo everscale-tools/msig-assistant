@@ -1,14 +1,14 @@
 {
   "name": "everscale-msig-assistant",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "private": true,
   "type": "module",
   "scripts": {
     "start": "node app.js"
   },
   "dependencies": {
-    "@tonclient/core": "^1.27.1",
-    "@tonclient/lib-node": "^1.27.1",
+    "@tonclient/core": "^1.30.0",
+    "@tonclient/lib-node": "^1.30.0",
     "async": "^3.2.0",
     "debug": "^4.3.2",
     "express": "^4.17.1",
