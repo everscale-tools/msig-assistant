@@ -1,9 +1,16 @@
 export default [
     {
-        txIterationStateDbPath: '/db/net.ton.dev/iteration-state.db',
+        txIterationStateDbPath: '/db/main.everos.dev/iteration-state.db',
         client: {
             network: {
-                endpoints: ['https://net1.ton.dev/', 'https://net5.ton.dev/']
+                // look for endpoints here: https://tonlabs.gitbook.io/evernode-platform/products/cloud/public-api
+                endpoints: [
+                    'eri01.main.everos.dev',
+                    'gra01.main.everos.dev',
+                    'gra02.main.everos.dev',
+                    'lim01.main.everos.dev',
+                    'rbx01.main.everos.dev'
+                ]
             }
         },
         sources: { // multiple sources are allowed: key - wallet address, value - list of confirmers' key pairs
