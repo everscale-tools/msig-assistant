@@ -1,5 +1,4 @@
-![build](https://img.shields.io/docker/cloud/build/sergemedvedev/freeton-msig-assistant.svg)
-[![version](https://img.shields.io/docker/v/sergemedvedev/freeton-msig-assistant?sort=semver)](https://hub.docker.com/r/sergemedvedev/freeton-msig-assistant/tags)
+[![version](https://img.shields.io/docker/v/sergemedvedev/everscale-msig-assistant?sort=semver)](https://hub.docker.com/r/sergemedvedev/everscale-msig-assistant/tags)
 
 # Everscale MultiSig Assistant
 
@@ -16,10 +15,10 @@ It might prove useful to validators whose wallets require additional transaction
 - Refer to [config.js.example](config.js.example) to create `./config.js` file
 - Create `./docker-compose.yml` using example below and deploy the service:
     ```yaml
-    version: "2.3"
+    version: "2.4"
     services:
-      freeton-msig-assistant:
-        image: sergemedvedev/freeton-msig-assistant
+      msig-assistant:
+        image: sergemedvedev/everscale-msig-assistant:3.0.2
         environment:
           DEBUG: "app,lib:*"
         volumes:
