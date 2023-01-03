@@ -1,4 +1,4 @@
-FROM sergemedvedev/tonlabs-node-tools:0.1.255 AS node-tools
+FROM sergemedvedev/tonlabs-node-tools:0.1.297 AS node-tools
 
 FROM node:bullseye-slim
 
