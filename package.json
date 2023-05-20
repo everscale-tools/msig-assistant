@@ -1,14 +1,14 @@
 {
   "name": "everscale-msig-assistant",
-  "version": "3.0.4",
+  "version": "3.0.8",
   "private": true,
   "type": "module",
   "scripts": {
     "start": "node app.js"
   },
   "dependencies": {
-    "@eversdk/core": "^1.41.0",
-    "@eversdk/lib-node": "^1.41.0",
+    "@eversdk/core": "^1.42.1",
+    "@eversdk/lib-node": "^1.42.1",
     "async": "^3.2.4",
     "debug": "^4.3.4",
     "express": "^4.18.2",
